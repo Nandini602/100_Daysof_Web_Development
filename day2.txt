@@ -1,0 +1,1556 @@
+Microsoft Windows [Version 10.0.22621.2283]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\mendh>cd oneDrive
+
+C:\Users\mendh\OneDrive>cd Desktop
+
+C:\Users\mendh\OneDrive\Desktop>cd dot_dummy_repo
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../Dell.pdf
+        ../GitHub Desktop.lnk
+        ../INFO.pdf
+        ../MinGW Installer.lnk
+        ../Visual Studio Code.lnk
+        ../desktop.ini
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git init
+Initialized empty Git repository in C:/Users/mendh/OneDrive/Desktop/Dot_dummy_repo/.git/
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>dir /ah /s /b .git
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>ls -al
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>cd ..
+
+C:\Users\mendh\OneDrive\Desktop>git clone https://github.com/Nandini602/-python-programing-lab.git myBtp
+Cloning into 'myBtp'...
+remote: Enumerating objects: 81, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 81 (delta 0), reused 0 (delta 0), pack-reused 65RecReceiving objects: 100% (81/81), 19.35 KiB | 582.00 KiB/s, done.
+Resolving deltas: 100% (2/2), done.
+
+
+C:\Users\mendh\OneDrive\Desktop>cd myBtp
+
+C:\Users\mendh\OneDrive\Desktop\myBtp>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\mendh\OneDrive\Desktop\myBtp>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PYTHON CASE STUDY/1A.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\mendh\OneDrive\Desktop\myBtp>git diff
+diff --git a/PYTHON CASE STUDY/1A.py b/PYTHON CASE STUDY/1A.py
+index 8981b97..c28c865 100644
+--- a/PYTHON CASE STUDY/1A.py
++++ b/PYTHON CASE STUDY/1A.py
+@@ -12,7 +12,7 @@ fields:
+ b) Insert 4-5 records in the table.
+
+ '''
+-
++may be not^M
+ import mysql.connector
+ mydb = mysql.connector.connect(host="localhost", user="root", passwd="MYSQL")
+ mycursor = mydb.cursor()
+
+C:\Users\mendh\OneDrive\Desktop\myBtp>git log
+commit fa8f674fec0443fa61c4415138b3f6e14729d70e (HEAD -> main, origin/main, origin/HEAD)
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Mon Jul 25 10:54:51 2022 +0530
+
+    Add files via upload
+
+commit 71fc133df8d4114ce7bf029fa33a3b81fe4b4982
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Mon Jul 4 01:56:05 2022 +0530
+
+    Add files via upload
+
+commit ac92a7f91f5f2fcba75a4b77e0c1760f6adf24f2
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Sun Jun 26 12:34:02 2022 +0530
+
+    Delete lab7 directory
+
+commit fa95b52bc2cf88b087f11846c39066b4c8f20108
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Sun Jun 26 12:33:30 2022 +0530
+
+    Add files via upload
+
+commit 24acbd59c44c047dc4b4835aa1f29b5faa024224
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Sun Jun 26 12:14:34 2022 +0530
+
+    Add files via upload
+
+commit b331b92e264879fc7ae9d8fbb1c2d3e5c706537f
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com
+C:\Users\mendh\OneDrive\Desktop\myBtp>git log -2
+commit fa8f674fec0443fa61c4415138b3f6e14729d70e (HEAD -> main, origin/main, origin/HEAD)
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Mon Jul 25 10:54:51 2022 +0530
+
+    Add files via upload
+
+commit 71fc133df8d4114ce7bf029fa33a3b81fe4b4982
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Mon Jul 4 01:56:05 2022 +0530
+
+    Add files via upload
+
+C:\Users\mendh\OneDrive\Desktop\myBtp>git log -p
+commit fa8f674fec0443fa61c4415138b3f6e14729d70e (HEAD -> main, origin/main, origin/HEAD)
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Mon Jul 25 10:54:51 2022 +0530
+
+    Add files via upload
+
+diff --git a/PYTHON CASE STUDY/1A.py b/PYTHON CASE STUDY/1A.py
+new file mode 100644
+index 0000000..8981b97
+--- /dev/null
++++ b/PYTHON CASE STUDY/1A.py
+@@ -0,0 +1,56 @@
++'''^M
++a) Create a database in MySQL with a table of students. The table will contain the following ^M
++fields: ^M
++1. PRN number #this will be a primary key^M
++2. First Name^M
++3. Middle name^M
++4. Last name^M
++5. Address^M
++6. mobile number^M
++7. email id^M
++8. DOB^M
++b) Insert 4-5 records in the table.^M
++^M
++'''^M
++^M
++import mysql.connector^M
++mydb = mysql.connector.connect(host="localhost", user="root", passwd="MYSQL")^M
++mycursor = mydb.cursor()^M
++^M
++#mycursor.execute("CREATE DATABASE students_data")^M
++^M
++^M
+
+C:\Users\mendh\OneDrive\Desktop\myBtp>git log --stat
+commit fa8f674fec0443fa61c4415138b3f6e14729d70e (HEAD -> main, origin/main, origin/HEAD)
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Mon Jul 25 10:54:51 2022 +0530
+
+    Add files via upload
+
+ PYTHON CASE STUDY/1A.py |  56 ++++++++++++
+ PYTHON CASE STUDY/1B.py | 123 ++++++++++++++++++++++++++
+ PYTHON CASE STUDY/2A.py |  93 +++++++++++++++++++
+ PYTHON CASE STUDY/2B.py | 231 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 503 insertions(+)
+
+commit 71fc133df8d4114ce7bf029fa33a3b81fe4b4982
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Mon Jul 4 01:56:05 2022 +0530
+
+    Add files via upload
+
+ python lab/lab 8/library.py              | 61 ++++++++++++++++++++++++++++++++
+ python lab/lab 8/makedict.py             | 11 ++++++
+ python lab/lab 8/replace the word.py     |  5 +++
+ python lab/lab 8/sort.py                 | 11 ++++++
+ python lab/lab 8/telephone dicrectory.py | 30 ++++++++++++++++
+ 5 files changed, 118 insertions(+)
+
+commit ac92a7f91f5f2fcba75a4b77e0c1760f6adf24f2
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Sun Jun 26 12:34:02 2022 +0530
+
+    Delete lab7 directory
+
+ lab7/elements divisible by k.py       | 6 ------
+
+C:\Users\mendh\OneDrive\Desktop\myBtp>git show 71fc133df8d4114ce7bf029fa33a3b81fe4b4982
+commit 71fc133df8d4114ce7bf029fa33a3b81fe4b4982
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Mon Jul 4 01:56:05 2022 +0530
+
+    Add files via upload
+
+diff --git a/python lab/lab 8/library.py b/python lab/lab 8/library.py
+new file mode 100644
+index 0000000..1a39e61
+--- /dev/null
++++ b/python lab/lab 8/library.py
+@@ -0,0 +1,61 @@
++#make functions for library to issue a book,checck if book is present or not and return book^M
++^M
++^M
++def issue_book(title):^M
++    if title in lib:^M
++        lib[title] -= 1^M
++        print(title, 'issued.')^M
++^M
++        if lib[title] == 0:^M
++            del lib[title]^M
++^M
++        if title in issued_books:^M
++            issued_books[title] += 1^M
++        else:^M
++            issued_books[title] = 1^M
++^M
++    else:^M
++        print(title, "is not available.")^M
++^M
++^M
++def checkif(title):^M
++    if title in lib:^M
++        print(lib[title], 'copies of', title, 'available')^M
+
+C:\Users\mendh\OneDrive\Desktop\myBtp>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PYTHON CASE STUDY/1A.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\mendh\OneDrive\Desktop\myBtp>cd ..
+
+C:\Users\mendh\OneDrive\Desktop>cd Dot_dummy_repo
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        python.py
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git add python.py
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   python.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git commit -m "init python.py"
+[master (root-commit) 31e9ae3] init python.py
+ 1 file changed, 1 insertion(+)
+ create mode 100644 python.py
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f (HEAD -> master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Thu Oct 19 23:52:34 2023 +0530
+
+    init python.py
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git show 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f (HEAD -> master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Thu Oct 19 23:52:34 2023 +0530
+
+    init python.py
+
+diff --git a/python.py b/python.py
+new file mode 100644
+index 0000000..ce47b77
+--- /dev/null
++++ b/python.py
+@@ -0,0 +1 @@
++print("hello")
+\ No newline at end of file
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git add .
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test.txt
+
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f (HEAD -> master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Thu Oct 19 23:52:34 2023 +0530
+
+    init python.py
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log -p
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f (HEAD -> master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Thu Oct 19 23:52:34 2023 +0530
+
+    init python.py
+
+diff --git a/python.py b/python.py
+new file mode 100644
+index 0000000..ce47b77
+--- /dev/null
++++ b/python.py
+@@ -0,0 +1 @@
++print("hello")
+\ No newline at end of file
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git add .
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test.txt
+
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git show 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f (HEAD -> master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Thu Oct 19 23:52:34 2023 +0530
+
+    init python.py
+
+diff --git a/python.py b/python.py
+new file mode 100644
+index 0000000..ce47b77
+--- /dev/null
++++ b/python.py
+@@ -0,0 +1 @@
++print("hello")
+\ No newline at end of file
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git diff test.txt
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test.txt
+
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git diff test.txt
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git diff "test.txt"
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git diff test.txt
+diff --git a/test.txt b/test.txt
+index db167d2..c4fb956 100644
+--- a/test.txt
++++ b/test.txt
+@@ -1,3 +1,3 @@
+ abcd
+
+-my name
+\ No newline at end of file
++my name nandini
+\ No newline at end of file
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git add .
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test.txt
+
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git commit -m "added my name is nandini"
+[master 7d74ad6] added my name is nandini
+ 1 file changed, 3 insertions(+)
+ create mode 100644 test.txt
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734 (HEAD -> master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:06:43 2023 +0530
+
+    added my name is nandini
+
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Thu Oct 19 23:52:34 2023 +0530
+
+    init python.py
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git diff test.txt
+diff --git a/test.txt b/test.txt
+index c4fb956..1732dc6 100644
+--- a/test.txt
++++ b/test.txt
+@@ -1,3 +1,5 @@
+ abcd
+
+-my name nandini
+\ No newline at end of file
++my name nandini
++
++you can do it
+\ No newline at end of file
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git restore test.txt
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore.txt
+        test.pptx
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore.txt
+        test.pptx
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore.txt
+        test.pptx
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git add .
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore.txt
+        new file:   test.pptx
+
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git commit -m "adding ignore file"
+[master 07bad28] adding ignore file
+ 2 files changed, 1 insertion(+)
+ create mode 100644 .gitignore.txt
+ create mode 100644 test.pptx
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit 07bad28fac5fc8797ceb331607c1aa1ab982e18f (HEAD -> master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:20:00 2023 +0530
+
+    adding ignore file
+
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:06:43 2023 +0530
+
+    added my name is nandini
+
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Thu Oct 19 23:52:34 2023 +0530
+
+    init python.py
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git restore
+fatal: you must specify path(s) to restore
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git branch
+* master
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git brancj quicksort
+git: 'brancj' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git branch quicksort
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git branch
+* master
+  quicksort
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git checkout quicksort
+Switched to branch 'quicksort'
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git branch
+  master
+* quicksort
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit 07bad28fac5fc8797ceb331607c1aa1ab982e18f (HEAD -> quicksort, master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:20:00 2023 +0530
+
+    adding ignore file
+
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:06:43 2023 +0530
+
+    added my name is nandini
+
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Thu Oct 19 23:52:34 2023 +0530
+
+    init python.py
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch quicksort
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   python.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git add .
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch quicksort
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   python.py
+
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git commit -m "add print sentence"
+[quicksort ff7b9fc] add print sentence
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit ff7b9fc5e3cd1f58f4fcfae55a55b0db7008e62f (HEAD -> quicksort)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:11:49 2023 +0530
+
+    add print sentence
+
+commit 07bad28fac5fc8797ceb331607c1aa1ab982e18f (master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:20:00 2023 +0530
+
+    adding ignore file
+
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:06:43 2023 +0530
+
+    added my name is nandini
+
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Thu Oct 19 23:52:34 2023 +0530
+
+    init python.py
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git checkout master
+Switched to branch 'master'
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git branch
+* master
+  quicksort
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git checkout -b bubblesort
+Switched to a new branch 'bubblesort'
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit 07bad28fac5fc8797ceb331607c1aa1ab982e18f (HEAD -> bubblesort, master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:20:00 2023 +0530
+
+    adding ignore file
+
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:06:43 2023 +0530
+
+    added my name is nandini
+
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Thu Oct 19 23:52:34 2023 +0530
+
+    init python.py
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch bubblesort
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   python.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git -am
+unknown option: -am
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git add .
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git commit -am "add bubble sort"
+[bubblesort b9b82a7] add bubble sort
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit b9b82a73aebf1017af4bf749927780180f51df10 (HEAD -> bubblesort)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:17:11 2023 +0530
+
+    add bubble sort
+
+commit 07bad28fac5fc8797ceb331607c1aa1ab982e18f (master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:20:00 2023 +0530
+
+    adding ignore file
+
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:06:43 2023 +0530
+
+    added my name is nandini
+
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Thu Oct 19 23:52:34 2023 +0530
+
+    init python.py
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git branch
+* bubblesort
+  master
+  quicksort
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git checkout master
+Switched to branch 'master'
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git merge bubblesort
+Updating 07bad28..b9b82a7
+Fast-forward
+ python.py | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit b9b82a73aebf1017af4bf749927780180f51df10 (HEAD -> master, bubblesort)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:17:11 2023 +0530
+
+    add bubble sort
+
+commit 07bad28fac5fc8797ceb331607c1aa1ab982e18f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:20:00 2023 +0530
+
+    adding ignore file
+
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:06:43 2023 +0530
+
+    added my name is nandini
+
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Thu Oct 19 23:52:34 2023 +0530
+
+    init python.py
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git branch
+  bubblesort
+* master
+  quicksort
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git branch -d bubblesort
+Deleted branch bubblesort (was b9b82a7).
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git branch
+* master
+  quicksort
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git merge quicksort
+Auto-merging python.py
+CONFLICT (content): Merge conflict in python.py
+Automatic merge failed; fix conflicts and then commit the result.
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   python.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   python.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git brach
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git branch
+* master
+  quicksort
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git commit -m "quicksort add"
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       python.py
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git add .
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   python.py
+
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git commit -m "quicksort add"
+[master eb532ae] quicksort add
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit eb532aee8ad287ef1b6e351090a6837902de4881 (HEAD -> master)
+Merge: b9b82a7 ff7b9fc
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:23:17 2023 +0530
+
+    quicksort add
+
+commit b9b82a73aebf1017af4bf749927780180f51df10
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:17:11 2023 +0530
+
+    add bubble sort
+
+commit ff7b9fc5e3cd1f58f4fcfae55a55b0db7008e62f (quicksort)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:11:49 2023 +0530
+
+    add print sentence
+
+commit 07bad28fac5fc8797ceb331607c1aa1ab982e18f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:20:00 2023 +0530
+
+    adding ignore file
+
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:06:43 2023 +0530
+
+    added my name is nandini
+
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Thu Oct 19 23:52:34 2023 +0530
+
+    init python.py
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git checkout master
+Already on 'master'
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git branch
+* master
+  quicksort
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit eb532aee8ad287ef1b6e351090a6837902de4881 (HEAD -> master)
+Merge: b9b82a7 ff7b9fc
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:23:17 2023 +0530
+
+    quicksort add
+
+commit b9b82a73aebf1017af4bf749927780180f51df10
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:17:11 2023 +0530
+
+    add bubble sort
+
+commit ff7b9fc5e3cd1f58f4fcfae55a55b0db7008e62f (quicksort)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:11:49 2023 +0530
+
+    add print sentence
+
+commit 07bad28fac5fc8797ceb331607c1aa1ab982e18f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:20:00 2023 +0530
+
+    adding ignore file
+
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:06:43 2023 +0530
+
+    added my name is nandini
+
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Thu Oct 19 23:52:34 2023 +0530
+
+    init python.py
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git tag -a betaV1.0 eb532aee8ad287ef1b6e351090a6837902de4881 -m "my beta realse"
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   python.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git commit -am "merge sort is added"
+[master 7914bf5] merge sort is added
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit 7914bf5591b02e8e81eb6b366c4e28afef887cf2 (HEAD -> master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:28:50 2023 +0530
+
+    merge sort is added
+
+commit eb532aee8ad287ef1b6e351090a6837902de4881 (tag: betaV1.0)
+Merge: b9b82a7 ff7b9fc
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:23:17 2023 +0530
+
+    quicksort add
+
+commit b9b82a73aebf1017af4bf749927780180f51df10
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:17:11 2023 +0530
+
+    add bubble sort
+
+commit ff7b9fc5e3cd1f58f4fcfae55a55b0db7008e62f (quicksort)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:11:49 2023 +0530
+
+    add print sentence
+
+commit 07bad28fac5fc8797ceb331607c1aa1ab982e18f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:20:00 2023 +0530
+
+    adding ignore file
+
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:06:43 2023 +0530
+
+    added my name is nandini
+
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git tag -d betaV1.0
+Deleted tag 'betaV1.0' (was 86ed3c1)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit 7914bf5591b02e8e81eb6b366c4e28afef887cf2 (HEAD -> master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:28:50 2023 +0530
+
+    merge sort is added
+
+commit eb532aee8ad287ef1b6e351090a6837902de4881
+Merge: b9b82a7 ff7b9fc
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:23:17 2023 +0530
+
+    quicksort add
+
+commit b9b82a73aebf1017af4bf749927780180f51df10
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:17:11 2023 +0530
+
+    add bubble sort
+
+commit ff7b9fc5e3cd1f58f4fcfae55a55b0db7008e62f (quicksort)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:11:49 2023 +0530
+
+    add print sentence
+
+commit 07bad28fac5fc8797ceb331607c1aa1ab982e18f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:20:00 2023 +0530
+
+    adding ignore file
+
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:06:43 2023 +0530
+
+    added my name is nandini
+
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>cd ..
+
+C:\Users\mendh\OneDrive\Desktop>cd myBtp
+
+C:\Users\mendh\OneDrive\Desktop\myBtp>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PYTHON CASE STUDY/1A.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\mendh\OneDrive\Desktop\myBtp>cd ..
+
+C:\Users\mendh\OneDrive\Desktop>cd dot_dummy_repo
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit 7914bf5591b02e8e81eb6b366c4e28afef887cf2 (HEAD -> master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:28:50 2023 +0530
+
+    merge sort is added
+
+commit eb532aee8ad287ef1b6e351090a6837902de4881
+Merge: b9b82a7 ff7b9fc
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:23:17 2023 +0530
+
+    quicksort add
+
+commit b9b82a73aebf1017af4bf749927780180f51df10
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:17:11 2023 +0530
+
+    add bubble sort
+
+commit ff7b9fc5e3cd1f58f4fcfae55a55b0db7008e62f (quicksort)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:11:49 2023 +0530
+
+    add print sentence
+
+commit 07bad28fac5fc8797ceb331607c1aa1ab982e18f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:20:00 2023 +0530
+
+    adding ignore file
+
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:06:43 2023 +0530
+
+    added my name is nandini
+
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   python.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git commit -am " tp"
+[master 62b87c3]  tp
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git revert 7914bf5591b02e8e81eb6b366c4e28afef887cf2
+Auto-merging python.py
+CONFLICT (content): Merge conflict in python.py
+error: could not revert 7914bf5... merge sort is added
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git branch
+* master
+  quicksort
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit 62b87c3c45593bc15c8998779e41e93924dbbc2c (HEAD -> master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:51:15 2023 +0530
+
+     tp
+
+commit 7914bf5591b02e8e81eb6b366c4e28afef887cf2
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:28:50 2023 +0530
+
+    merge sort is added
+
+commit eb532aee8ad287ef1b6e351090a6837902de4881
+Merge: b9b82a7 ff7b9fc
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:23:17 2023 +0530
+
+    quicksort add
+
+commit b9b82a73aebf1017af4bf749927780180f51df10
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:17:11 2023 +0530
+
+    add bubble sort
+
+commit ff7b9fc5e3cd1f58f4fcfae55a55b0db7008e62f (quicksort)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:11:49 2023 +0530
+
+    add print sentence
+
+commit 07bad28fac5fc8797ceb331607c1aa1ab982e18f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:20:00 2023 +0530
+
+    adding ignore file
+
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git revert  62b87c3c45593bc15c8998779e41e93924dbbc2c
+error: Reverting is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: revert failed
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+You are currently reverting commit 7914bf5.
+  (fix conflicts and run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both modified:   python.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git add .
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+You are currently reverting commit 7914bf5.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   python.py
+
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit 62b87c3c45593bc15c8998779e41e93924dbbc2c (HEAD -> master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:51:15 2023 +0530
+
+     tp
+
+commit 7914bf5591b02e8e81eb6b366c4e28afef887cf2
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:28:50 2023 +0530
+
+    merge sort is added
+
+commit eb532aee8ad287ef1b6e351090a6837902de4881
+Merge: b9b82a7 ff7b9fc
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:23:17 2023 +0530
+
+    quicksort add
+
+commit b9b82a73aebf1017af4bf749927780180f51df10
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:17:11 2023 +0530
+
+    add bubble sort
+
+commit ff7b9fc5e3cd1f58f4fcfae55a55b0db7008e62f (quicksort)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:11:49 2023 +0530
+
+    add print sentence
+
+commit 07bad28fac5fc8797ceb331607c1aa1ab982e18f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:20:00 2023 +0530
+
+    adding ignore file
+
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git revert 62b87c3c45593bc15c8998779e41e93924dbbc2c
+error: your local changes would be overwritten by revert.
+hint: commit your changes or stash them to proceed.
+fatal: revert failed
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git revert 62b87c3c45593bc15c8998779e41e93924dbbc2c
+error: your local changes would be overwritten by revert.
+hint: commit your changes or stash them to proceed.
+fatal: revert failed
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+You are currently reverting commit 7914bf5.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --skip" to skip this patch)
+  (use "git revert --abort" to cancel the revert operation)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   python.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   python.py
+
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git revert  7d74ad6fd962c5e280a486400e0ea65bdae7d734
+error: your local changes would be overwritten by revert.
+hint: commit your changes or stash them to proceed.
+fatal: revert failed
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>:wq
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit 62b87c3c45593bc15c8998779e41e93924dbbc2c (HEAD -> master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:51:15 2023 +0530
+
+     tp
+
+commit 7914bf5591b02e8e81eb6b366c4e28afef887cf2
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:28:50 2023 +0530
+
+    merge sort is added
+
+commit eb532aee8ad287ef1b6e351090a6837902de4881
+Merge: b9b82a7 ff7b9fc
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:23:17 2023 +0530
+
+    quicksort add
+
+commit b9b82a73aebf1017af4bf749927780180f51df10
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:17:11 2023 +0530
+
+    add bubble sort
+
+commit ff7b9fc5e3cd1f58f4fcfae55a55b0db7008e62f (quicksort)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 01:11:49 2023 +0530
+
+    add print sentence
+
+commit 07bad28fac5fc8797ceb331607c1aa1ab982e18f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:20:00 2023 +0530
+
+    adding ignore file
+
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git revert 62b87c3c45593bc15c8998779e41e93924dbbc2c
+error: your local changes would be overwritten by revert.
+hint: commit your changes or stash them to proceed.
+fatal: revert failed
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git reset --soft 07bad28fac5fc8797ceb331607c1aa1ab982e18f
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit 07bad28fac5fc8797ceb331607c1aa1ab982e18f (HEAD -> master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:20:00 2023 +0530
+
+    adding ignore file
+
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:06:43 2023 +0530
+
+    added my name is nandini
+
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Thu Oct 19 23:52:34 2023 +0530
+
+    init python.py
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   python.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   python.py
+
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git commit -am "add sort"
+[master c4b95d1] add sort
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit c4b95d1b462a271b280e39e3eb26f235e3a7351c (HEAD -> master)Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 02:04:28 2023 +0530
+
+    add sort
+
+commit 07bad28fac5fc8797ceb331607c1aa1ab982e18f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:20:00 2023 +0530
+
+    adding ignore file
+
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:06:43 2023 +0530
+
+    added my name is nandini
+
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Thu Oct 19 23:52:34 2023 +0530
+
+    init python.py
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git diff HEAD
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git commit --amend
+[master 275af4d]    the  add sort
+ Date: Fri Oct 20 02:04:28 2023 +0530
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>git log
+commit 275af4dcc2328e3467fbb5457f79c1d28811670a (HEAD -> master)Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 02:04:28 2023 +0530
+
+       the  add sort
+
+commit 07bad28fac5fc8797ceb331607c1aa1ab982e18f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:20:00 2023 +0530
+
+    adding ignore file
+
+commit 7d74ad6fd962c5e280a486400e0ea65bdae7d734
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Fri Oct 20 00:06:43 2023 +0530
+
+    added my name is nandini
+
+commit 31e9ae3a396f585dbf5e3252ef9b8b401dd5d31f
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Thu Oct 19 23:52:34 2023 +0530
+
+    init python.py
+
+C:\Users\mendh\OneDrive\Desktop\Dot_dummy_repo>cd ..
+
+C:\Users\mendh\OneDrive\Desktop>mkdir myrepo
+
+C:\Users\mendh\OneDrive\Desktop>cd myrepo
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git init
+Initialized empty Git repository in C:/Users/mendh/OneDrive/Desktop/myrepo/.git/
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git commit -am "intial commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+C:\Users\mendh\OneDrive\Desktop\myrepo>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+C:\Users\mendh\OneDrive\Desktop\myrepo>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git commit -m "intial commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+C:\Users\mendh\OneDrive\Desktop\myrepo>git add .
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   readme.txt
+
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git remote add origin https://github.com/Nandini602/my_repo/commits?author=Nandini602
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   readme.txt
+
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git log
+fatal: your current branch 'master' does not have any commits yet
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git log
+fatal: your current branch 'master' does not have any commits yet
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   readme.txt
+
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git branch
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git log
+fatal: your current branch 'master' does not have any commits yet
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git log
+fatal: your current branch 'master' does not have any commits yet
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>
