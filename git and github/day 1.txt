@@ -1,0 +1,634 @@
+Microsoft Windows [Version 10.0.22621.2283]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\mendh>pwd
+'pwd' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\mendh> pwd
+'pwd' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\mendh> git config --version
+error: unknown option `version'
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+C:\Users\mendh>git --version
+git version 2.42.0.windows.2
+
+C:\Users\mendh>git config --global user.name "Nandini Mendhe"
+
+C:\Users\mendh>git config --global user.email "mendhenandini910@gmail.com
+
+C:\Users\mendh>git config --list
+pack.packsizelimit=2g
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files (x86)/Git/mingw32/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Nandini Mendhe
+user.email=mendhenandini910@gmail.com
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+
+C:\Users\mendh>pwd
+'pwd' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\mendh> pwd
+'pwd' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\mendh>  Pwd
+'Pwd' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\mendh>Pwd
+'Pwd' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\mendh>cd Desktop
+The system cannot find the path specified.
+
+C:\Users\mendh>cd Desktop/
+The system cannot find the path specified.
+
+C:\Users\mendh>Cd Desktop\
+The system cannot find the path specified.
+
+C:\Users\mendh>cd Contacts
+
+C:\Users\mendh\Contacts>cd Desktop
+The system cannot find the path specified.
+
+C:\Users\mendh\Contacts>C:\Users\mendh\OneDrive\Desktop
+'C:\Users\mendh\OneDrive\Desktop' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\mendh\Contacts>cd OneDrive
+The system cannot find the path specified.
+
+C:\Users\mendh\Contacts>cd ..
+
+C:\Users\mendh>cd desktop
+The system cannot find the path specified.
+
+C:\Users\mendh>cd OneDrive
+
+C:\Users\mendh\OneDrive>cd Desktop
+
+C:\Users\mendh\OneDrive\Desktop>pwd
+'pwd' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\mendh\OneDrive\Desktop>cd Web_d
+
+C:\Users\mendh\OneDrive\Desktop\Web_d>
+C:\Users\mendh\OneDrive\Desktop\Web_d>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\mendh\OneDrive\Desktop\Web_d> git status
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\mendh\OneDrive\Desktop\Web_d>git init
+Initialized empty Git repository in C:/Users/mendh/OneDrive/Desktop/Web_d/.git/
+
+C:\Users\mendh\OneDrive\Desktop\Web_d>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\Web_d>cd ..
+
+C:\Users\mendh\OneDrive\Desktop>git clone https://github.com/Nandini602/-python-programing-lab.git mynew/
+Cloning into 'mynew'...
+remote: Enumerating objects: 81, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 81 (delta 0), reused 0 (delta 0), pack-reused 65ReceivReceiving objects:  85% (69/81)
+Receiving objects: 100% (81/81), 19.35 KiB | 9.68 MiB/s, done.
+Resolving deltas: 100% (2/2), done.
+
+C:\Users\mendh\OneDrive\Desktop>cd mynew
+
+C:\Users\mendh\OneDrive\Desktop\mynew>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\mendh\OneDrive\Desktop\mynew>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PYTHON CASE STUDY/1A.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\mendh\OneDrive\Desktop\mynew>git diff
+diff --git a/PYTHON CASE STUDY/1A.py b/PYTHON CASE STUDY/1A.py
+index 8981b97..ae96f77 100644
+--- a/PYTHON CASE STUDY/1A.py
++++ b/PYTHON CASE STUDY/1A.py
+@@ -12,7 +12,7 @@ fields:
+ b) Insert 4-5 records in the table.
+
+ '''
+-
++ new ^M
+ import mysql.connector
+ mydb = mysql.connector.connect(host="localhost", user="root", passwd="MYSQL")
+ mycursor = mydb.cursor()
+
+C:\Users\mendh\OneDrive\Desktop\mynew>ls _al
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\mendh\OneDrive\Desktop\mynew>ls -al
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\mendh\OneDrive\Desktop\mynew>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PYTHON CASE STUDY/1A.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\mendh\OneDrive\Desktop\mynew>git log
+commit fa8f674fec0443fa61c4415138b3f6e14729d70e (HEAD -> main, origin/main, origin/HEAD)
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Mon Jul 25 10:54:51 2022 +0530
+
+    Add files via upload
+
+commit 71fc133df8d4114ce7bf029fa33a3b81fe4b4982
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Mon Jul 4 01:56:05 2022 +0530
+
+    Add files via upload
+
+commit ac92a7f91f5f2fcba75a4b77e0c1760f6adf24f2
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Sun Jun 26 12:34:02 2022 +0530
+
+    Delete lab7 directory
+
+commit fa95b52bc2cf88b087f11846c39066b4c8f20108
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Sun Jun 26 12:33:30 2022 +0530
+
+    Add files via upload
+
+commit 24acbd59c44c047dc4b4835aa1f29b5faa024224
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Sun Jun 26 12:14:34 2022 +0530
+
+    Add files via upload
+
+commit b331b92e264879fc7ae9d8fbb1c2d3e5c706537f
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Sat Jun 18 19:36:59 2022 +0530
+
+    Add files via upload
+
+commit 5fb7a362ade5639d89786abcc9070d766c2b9356
+
+C:\Users\mendh\OneDrive\Desktop\mynew>git log -3
+commit fa8f674fec0443fa61c4415138b3f6e14729d70e (HEAD -> main, origin/main, origin/HEAD)
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Mon Jul 25 10:54:51 2022 +0530
+
+    Add files via upload
+
+commit 71fc133df8d4114ce7bf029fa33a3b81fe4b4982
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Mon Jul 4 01:56:05 2022 +0530
+
+    Add files via upload
+
+commit ac92a7f91f5f2fcba75a4b77e0c1760f6adf24f2
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Sun Jun 26 12:34:02 2022 +0530
+
+    Delete lab7 directory
+
+C:\Users\mendh\OneDrive\Desktop\mynew>git log -p
+commit fa8f674fec0443fa61c4415138b3f6e14729d70e (HEAD -> main, origin/main, origin/HEAD)
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Mon Jul 25 10:54:51 2022 +0530
+
+    Add files via upload
+
+diff --git a/PYTHON CASE STUDY/1A.py b/PYTHON CASE STUDY/1A.py
+new file mode 100644
+index 0000000..8981b97
+--- /dev/null
++++ b/PYTHON CASE STUDY/1A.py
+@@ -0,0 +1,56 @@
++'''^M
++a) Create a database in MySQL with a table of students. The table will contain the following ^M
++fields: ^M
++1. PRN number #this will be a primary key^M
++2. First Name^M
++3. Middle name^M
++4. Last name^M
++5. Address^M
++6. mobile number^M
++7. email id^M
++8. DOB^M
++b) Insert 4-5 records in the table.^M
++^M
++'''^M
++^M
++import mysql.connector^M
++mydb = mysql.connector.connect(host="localhost", user="root", passwd="MYSQL")^M
++mycursor = mydb.cursor()^M
++^M
++#mycursor.execute("CREATE DATABASE students_data")^M
++^M
++^M
++mydb = mysql.connector.connect(host="localhost",user="root",passwd=
+C:\Users\mendh\OneDrive\Desktop\mynew>git log --oneline
+fa8f674 (HEAD -> main, origin/main, origin/HEAD) Add files via upload
+71fc133 Add files via upload
+ac92a7f Delete lab7 directory
+fa95b52 Add files via upload
+24acbd5 Add files via upload
+b331b92 Add files via upload
+5fb7a36 Initial commit
+
+C:\Users\mendh\OneDrive\Desktop\mynew>git log --stat
+commit fa8f674fec0443fa61c4415138b3f6e14729d70e (HEAD -> main, origin/main, origin/HEAD)
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Mon Jul 25 10:54:51 2022 +0530
+
+    Add files via upload
+
+ PYTHON CASE STUDY/1A.py |  56 ++++++++++++
+ PYTHON CASE STUDY/1B.py | 123 ++++++++++++++++++++++++++
+ PYTHON CASE STUDY/2A.py |  93 +++++++++++++++++++
+ PYTHON CASE STUDY/2B.py | 231 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 503 insertions(+)
+
+commit 71fc133df8d4114ce7bf029fa33a3b81fe4b4982
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Mon Jul 4 01:56:05 2022 +0530
+
+    Add files via upload
+
+ python lab/lab 8/library.py              | 61 ++++++++++++++++++++++++++++++++
+ python lab/lab 8/makedict.py             | 11 ++++++
+ python lab/lab 8/replace the word.py     |  5 +++
+ python lab/lab 8/sort.py                 | 11 ++++++
+ python lab/lab 8/telephone dicrectory.py | 30 ++++++++++++++++
+ 5 files changed, 118 insertions(+)
+
+commit ac92a7f91f5f2fcba75a4b77e0c1760f6adf24f2
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Sun Jun 26 12:34:02 2022 +0530
+
+    Delete lab7 directory
+
+ lab7/elements divisible by k.py       | 6 ------
+ lab7/min and max elements in tuple.py | 7 -------
+ lab7/size of tuple.py                 | 3 ---
+ lab7/sort the tuple .py               | 6 ------
+
+C:\Users\mendh\OneDrive\Desktop\mynew>git show 71fc133df8d4114ce7bf029fa33a3b81fe4b4982
+commit 71fc133df8d4114ce7bf029fa33a3b81fe4b4982
+Author: Nandini602 <107759330+Nandini602@users.noreply.github.com>
+Date:   Mon Jul 4 01:56:05 2022 +0530
+
+    Add files via upload
+
+diff --git a/python lab/lab 8/library.py b/python lab/lab 8/library.py
+new file mode 100644
+index 0000000..1a39e61
+--- /dev/null
++++ b/python lab/lab 8/library.py
+@@ -0,0 +1,61 @@
++#make functions for library to issue a book,checck if book is present or not and return book^M
++^M
++^M
++def issue_book(title):^M
++    if title in lib:^M
++        lib[title] -= 1^M
++        print(title, 'issued.')^M
++^M
++        if lib[title] == 0:^M
++            del lib[title]^M
++^M
++        if title in issued_books:^M
++            issued_books[title] += 1^M
++        else:^M
++            issued_books[title] = 1^M
++^M
++    else:^M
++        print(title, "is not available.")^M
++^M
++^M
++def checkif(title):^M
++    if title in lib:^M
++        print(lib[title], 'copies of', title, 'available')^M
++    else:^M
+
+C:\Users\mendh\OneDrive\Desktop\mynew>cd ..
+
+C:\Users\mendh\OneDrive\Desktop>mkdir myrepo
+
+C:\Users\mendh\OneDrive\Desktop>git init
+Initialized empty Git repository in C:/Users/mendh/OneDrive/Desktop/.git/
+
+C:\Users\mendh\OneDrive\Desktop>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Dell.pdf
+        GitHub Desktop.lnk
+        INFO.pdf
+        MinGW Installer.lnk
+        Visual Studio Code.lnk
+        Web_d/
+        desktop.ini
+        mynew/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop>cd myrepo
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../Dell.pdf
+        ../GitHub Desktop.lnk
+        ../INFO.pdf
+        ../MinGW Installer.lnk
+        ../Visual Studio Code.lnk
+        ../Web_d/
+        ../desktop.ini
+        ../mynew/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git init
+Initialized empty Git repository in C:/Users/mendh/OneDrive/Desktop/myrepo/.git/
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git myrepo
+git: 'myrepo' is not a git command. See 'git --help'.
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git add main.py
+fatal: pathspec 'main.py' did not match any files
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        main.py.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git add main.py
+fatal: pathspec 'main.py' did not match any files
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git add main.py.txt
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   main.py.txt
+
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git commit -m"init main.py.txt
+[master (root-commit) 7c26fea] init main.py.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 main.py.txt
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git log -p
+commit 7c26fea0927bdf536652919308100a51695c5a02 (HEAD -> master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Wed Oct 18 01:25:21 2023 +0530
+
+    init main.py.txt
+
+diff --git a/main.py.txt b/main.py.txt
+new file mode 100644
+index 0000000..aabbabe
+--- /dev/null
++++ b/main.py.txt
+@@ -0,0 +1 @@
++print("hello world");
+\ No newline at end of file
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git show7c26fea0927bdf536652919308100a51695c5a02
+git: 'show7c26fea0927bdf536652919308100a51695c5a02' is not a git command. See 'git --help'.
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git show 7c26fea0927bdf536652919308100a51695c5a02
+commit 7c26fea0927bdf536652919308100a51695c5a02 (HEAD -> master)
+Author: Nandini Mendhe <mendhenandini910@gmail.com>
+Date:   Wed Oct 18 01:25:21 2023 +0530
+
+    init main.py.txt
+
+diff --git a/main.py.txt b/main.py.txt
+new file mode 100644
+index 0000000..aabbabe
+--- /dev/null
++++ b/main.py.txt
+@@ -0,0 +1 @@
++print("hello world");
+\ No newline at end of file
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git diff
+diff --git a/main.py.txt b/main.py.txt
+index aabbabe..9f00eab 100644
+--- a/main.py.txt
++++ b/main.py.txt
+@@ -1 +1,3 @@
+-print("hello world");
+\ No newline at end of file
++print("hello world");
++
++nandini mnedhe
+\ No newline at end of file
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   main.py.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git add .
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   main.py.txt
+
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git restore
+fatal: you must specify path(s) to restore
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   main.py.txt
+
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   main.py.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        doc.txt
+
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git init
+Reinitialized existing Git repository in C:/Users/mendh/OneDrive/Desktop/myrepo/.git/
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git add .
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   doc.txt
+        modified:   main.py.txt
+
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   doc.txt
+        modified:   main.py.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignor.txt
+        ka.txt
+
+
+C:\Users\mendh\OneDrive\Desktop\myrepo>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   doc.txt
+        modified:   main.py.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignor.txt
+        ka.txt
+
+
+C:\Users\mendh\OneDrive
